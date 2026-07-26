@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-heading: var(--font-work-sans);
+  --font-body: var(--font-cardo);
+  --font-sans: var(--font-work-sans);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+}
+
+:root {
+  --background: 45 30% 97%;
+  --foreground: 20 15% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 15% 15%;
+  --primary: 38 92% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 45 20% 92%;
+  --secondary-foreground: 20 15% 25%;
+  --muted: 45 15% 94%;
+  --muted-foreground: 20 10% 50%;
+  --accent: 38 92% 95%;
+  --accent-foreground: 38 80% 30%;
+  --destructive: 0 72% 51%;
+  --border: 45 20% 88%;
+  --input: 45 20% 88%;
+  --ring: 38 92% 50%;
+  --success: 142 71% 45%;
+  --warning: 38 92% 50%;
+}
+
+body {
+  font-family: var(--font-body), serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+.sidebar-nav {
+  background: linear-gradient(180deg, hsl(38 92% 50%) 0%, hsl(38 80% 42%) 100%);
+}
