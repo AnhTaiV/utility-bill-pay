@@ -32,3 +32,10 @@ Mainnet requires exact payment proof, bill-provider confirmation, idempotent cal
 4. `POST /api/bills/:id/confirm` verifies the network, payer signature, recipient, USDC issuer, exact 7-decimal amount, memo, and Horizon result before marking the bill paid.
 
 Apply `drizzle/0001_mainnet_payment_intents.sql` before using the payment routes against an existing database. Configure `STELLAR_NETWORK=public`, Horizon, the public USDC issuer, and an explicit platform address for mainnet.
+
+## Soroban MVP artifact
+
+The minimal settlement registry is in [`contracts/payment-proof/`](contracts/payment-proof/).
+The app still owns bill-provider reconciliation and the classic USDC payment;
+the contract stores the verified settlement reference. Run
+`cargo test --manifest-path contracts/payment-proof/Cargo.toml`.
