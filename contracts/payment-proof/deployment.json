@@ -4,6 +4,15 @@
   "sdkVersion": "27.0.2",
   "wasmPath": "contracts/payment-proof/target/wasm32v1-none/release/utility_payment_proof_contract.wasm",
   "wasmSha256": "b457f9e069d965857459945c67dd7eaa0bdf889d57b52309ebf24e5dd92d54ad",
-  "status": "local-tested",
-  "testnet": { "status": "not-deployed", "contractId": null, "uploadTxHash": null, "deploymentTxHash": null, "initializeTxHash": null }
+  "status": "mainnet-deployed",
+  "testnet": { "status": "not-deployed", "contractId": null, "uploadTxHash": null, "deploymentTxHash": null, "initializeTxHash": null },
+  "mainnet": {
+    "status": "deployed-awaiting-initialize",
+    "contractId": "CDC4YHWXY3FG4JFXTLN4YJINMVFQ6BIJUUTM6SQ3FXO56HJNXXVAV2WZ",
+    "wasmSha256": "b457f9e069d965857459945c67dd7eaa0bdf889d57b52309ebf24e5dd92d54ad",
+    "uploadTxHash": "09a70e0ea99019509a42ca5a2856bbc6408671e239d9b830df33c8f9a93e479c",
+    "deploymentTxHash": "83860f129c967e6aeb19a0f52ce89b2fe0ddfcabe3e91ab5b6e61bae2c833f15",
+    "initializeTxHash": null,
+    "functionalTxHash": null
+  }
 }
