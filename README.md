@@ -10,7 +10,10 @@ Utility bill payment coordination with Stellar settlement and a bill-provider re
 
 ## Readiness status
 
-This repository is in hackathon readiness hardening. Demo fixtures are gated to non-public networks. No mainnet provider or transaction proof is claimed.
+The Soroban settlement registry is deployed on Stellar Mainnet and has a
+verified `create_payment` functional call. Demo fixtures remain gated to the
+demo mode; the deployment evidence is recorded in
+`contracts/payment-proof/deployment.json`.
 
 See [`docs/MAINNET_READINESS.md`](docs/MAINNET_READINESS.md).
 
@@ -43,3 +46,5 @@ the contract stores the verified settlement reference. Run
 Mainnet XDR preparation is documented in [`contracts/TESTNET_RUNBOOK.md`](contracts/TESTNET_RUNBOOK.md).
 The signer must review and sign each XDR externally; private keys are never
 stored by this repository or its scripts.
+
+Mainnet contract: `CDC4YHWXY3FG4JFXTLN4YJINMVFQ6BIJUUTM6SQ3FXO56HJNXXVAV2WZ`
