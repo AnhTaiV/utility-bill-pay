@@ -3,7 +3,7 @@
   "contractName": "utility-payment-proof-contract",
   "sdkVersion": "27.0.2",
   "wasmPath": "contracts/payment-proof/target/wasm32v1-none/release/utility_payment_proof_contract.wasm",
-  "wasmSha256": "8c9d7b15955b4008f3a84295e7a3974e659eedf060a3a7b26d26d316a2da2f60",
+  "wasmSha256": "b457f9e069d965857459945c67dd7eaa0bdf889d57b52309ebf24e5dd92d54ad",
   "status": "local-tested",
   "testnet": { "status": "not-deployed", "contractId": null, "uploadTxHash": null, "deploymentTxHash": null, "initializeTxHash": null }
 }

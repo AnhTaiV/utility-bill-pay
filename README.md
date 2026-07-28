@@ -39,3 +39,7 @@ The minimal settlement registry is in [`contracts/payment-proof/`](contracts/pay
 The app still owns bill-provider reconciliation and the classic USDC payment;
 the contract stores the verified settlement reference. Run
 `cargo test --manifest-path contracts/payment-proof/Cargo.toml`.
+
+Mainnet XDR preparation is documented in [`contracts/TESTNET_RUNBOOK.md`](contracts/TESTNET_RUNBOOK.md).
+The signer must review and sign each XDR externally; private keys are never
+stored by this repository or its scripts.
