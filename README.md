@@ -48,3 +48,11 @@ The signer must review and sign each XDR externally; private keys are never
 stored by this repository or its scripts.
 
 Mainnet contract: `CDC4YHWXY3FG4JFXTLN4YJINMVFQ6BIJUUTM6SQ3FXO56HJNXXVAV2WZ`
+
+- Public app: https://034-utility-bill-pay.vercel.app
+- Latest functional call: `create_payment(payment_id=34034, amount=0.1 USDC-equivalent)`
+- Functional transaction: https://stellar.expert/explorer/public/tx/7acd115c3a915f7272f972cf13bb0f770903e565b623ce9e21951738b8c63aa3
+
+The verified contract path is `upload WASM -> deploy -> initialize ->
+create_payment`. All deployment hashes are recorded in
+[`contracts/payment-proof/deployment.json`](contracts/payment-proof/deployment.json).
